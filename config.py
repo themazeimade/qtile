@@ -166,9 +166,9 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='xft:Bitstream Vera Sans Mono:style=Bold',
-    fontsize=12,
-    padding=3,
+    font='CaskaydiaCove Nerd Font Mono',
+    fontsize=15,
+    padding=1,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -188,7 +188,7 @@ screens = [
                 ),
                 widget.Systray(),
               # widget.Backlight(backlight_name='radeon_bl0',change_command='sudo light -S {0}'),
-                widget.BatteryIcon(theme_path='./battery-icons'),
+                # widget.BatteryIcon(theme_path=battery_path),
               # widget.CheckUpdates(update_interval=5,colour_have_updates='ff0000',colour_no_updates='00ff00',display_format='U:{updates}'),
                 widget.Clock(format='%d/%m/%y %I:%M %p'),
               # widget.PulseVolume(foreground='ffff00'),
@@ -196,7 +196,7 @@ screens = [
 #               widget.CPU(format='CPU {load_percent}%', foreground='0000ff'),
 #               widget.QuickExit(foreground='0000ff',default_text='[X_X]'),
             ],
-            50,
+            20,
             background="#3c3836",
             opacity=1,
             foreground="#fbf1c7",
@@ -247,7 +247,7 @@ auto_minimize = True
 # java that happens to be on java's whitelist.
 wmname = "Uqbar X.XX"
 
-cmd = ["picom --experimental-backends -b &", "~/.fehbg &", "nm-applet &","cbatticon -u 5 &", "volctl &", "blueman-applet &"]
+cmd = ["picom --experimental-backends -b &", "~/.fehbg &", "cbatticon -u 15 &" "nm-applet &", "volctl &", "blueman-applet &"]
 
 for x in cmd:
     os.system(x)
