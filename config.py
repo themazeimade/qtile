@@ -154,7 +154,7 @@ layouts = [
 #        ),
     #layout.Max(),
     # Try more layouts by unleashing below layouts.
-     layout.Stack(num_stacks=1),
+     layout.Stack(num_stacks=1, border_width=0),
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadWide(),
@@ -200,6 +200,9 @@ screens = [
             background="#3c3836",
             opacity=1,
             foreground="#fbf1c7",
+            border_width= [0,0,0,0],
+            margin=5,
+            border_color= '#000000'
         ),
     ),
 ]
