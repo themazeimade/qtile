@@ -198,10 +198,10 @@ screens = [
             ],
             20,
             background="#3c3836",
-            opacity=1,
+            opacity=0.95,
             foreground="#fbf1c7",
             border_width= [0,0,0,0],
-            margin=5,
+            margin=0,
             border_color= '#000000'
         ),
     ),
